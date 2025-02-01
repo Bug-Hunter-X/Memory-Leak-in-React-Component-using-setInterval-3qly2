@@ -1,0 +1,2 @@
+# React SetInterval Memory Leak
+This example demonstrates a common memory leak in React components using `setInterval` within `useEffect` without proper cleanup.  The `setInterval` continues to run even after the component unmounts, causing the counter to continue increasing and leading to a memory leak. The solution demonstrates the correct approach using the cleanup function to stop the interval.
